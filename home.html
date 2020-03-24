@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <title>首页</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+<nav>
+    <ul class="toolbar">
+        <li class="home">
+            <a href="#">首页</a>
+        </li>
+        <li class="browse">
+            <a href="#">浏览</a>
+        </li>
+        <li class="search">
+            <a href="#">搜索</a>
+        </li>
+        <li class="user">
+            <a href="#">个人中心 <span class="dropdown_caret"></span></a>
+            <ul class="menu">
+                <li>
+                    <a href="#"><img src="images/upload.png" alt="1.">上传</a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/photo.png" alt="2.">我的照片</a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/favorite.png" alt="3.">我的收藏</a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/exit.png" alt="4.">登入</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<div class="float_button">
+    <img src="images/refresh.png" title="刷新" id="refresh_button" class="refresh_button" alt="refresh">
+    <script>
+        refresh_button.onclick = function ()
+        {
+            alert("页面已刷新!");
+        }
+    </script>
+    <img src="images/back_to_top.png" title="回到页面顶部" id="back_to_top" class="back_to_top" alt="back_to_top">
+    <script>
+        var timer = null;
+        back_to_top.onclick = function ()
+        {
+            cancelAnimationFrame(timer);
+            timer = requestAnimationFrame(function fn()
+            {
+                var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+                if (oTop > 0)
+                {
+                    document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
+                    timer = requestAnimationFrame(fn);
+                }
+                else
+                {
+                    cancelAnimationFrame(timer);
+                }
+            });
+        }
+    </script>
+</div>
+<div class="head_image">
+    <img class="head_image" src="images/home.jpg" alt="head_img">
+    <p class="head_title">Welcome!</p>
+</div>
+<script async src="js/home_picture_box_appear.js"></script>
+<div class="hot_image_area">
+    <div class="hot_image">
+        <a href="#">
+            <img src="travel_images/medium/5855221959.jpg"
+                 title="Lewes Castle"
+                 alt="5855221959">
+        </a>
+        <p class="image_title">Lewes Castle</p>
+        <p class="image_description">Lewes Castle stands at the highest point of Lewes, East Sussex, England on an
+                                     artificial mound constructed with chalk blocks.</p>
+    </div>
+    <div class="hot_image">
+        <a href="#">
+            <img src="travel_images/medium/5856616479.jpg"
+                 title="Cliff"
+                 alt="5856616479">
+        </a>
+        <p class="image_title">Cliff</p>
+        <p class="image_description">A cliff is a mass of rock that rises very high and is almost vertical, or
+                                     straight up-and-down. Cliffs are very common landscape features.</p>
+
+    </div>
+    <div class="hot_image">
+        <a href="#">
+            <img src="travel_images/medium/6596046267.jpg"
+                 title="Rockefeller Center"
+                 alt="6596046267">
+        </a>
+        <p class="image_title">Rockefeller Center</p>
+        <p class="image_description">New York City's historic landmark for dining and shopping in the heart of
+                                     Midtown Manhattan.</p>
+    </div>
+    <div class="hot_image">
+        <a href="#">
+            <img src="travel_images/medium/9504445110.jpg"
+                 title="Santa Maria Novella"
+                 alt="9504445110">
+        </a>
+        <p class="image_title">Santa Maria Novella</p>
+        <p class="image_description">Santa Maria Novella is a church in Florence, Italy, situated opposite, and
+                                     lending its name to, the city's main railway station.</p>
+    </div>
+    <div class="hot_image">
+        <a href="#">
+            <img src="travel_images/medium/8645912379.jpg"
+                 title="Christ Church"
+                 alt="8645912379">
+        </a>
+        <p class="image_title">Christ Church</p>
+        <p class="image_description">Christ Church is a constituent college of the University of Oxford in
+                                     England.</p>
+    </div>
+    <div class="hot_image">
+        <a href="#">
+            <img src="travel_images/medium/6115548152.jpg"
+                 title="Checkpoint Charlie"
+                 alt="6115548152">
+        </a>
+        <p class="image_title">Checkpoint Charlie</p>
+        <p class="image_description">Checkpoint Charlie was the name given by the Western Allies
+                                     to the best-known Berlin Wall crossing point between East Berlin and West
+                                     Berlin during the Cold War.</p>
+    </div>
+    <div class="hot_image">
+        <a href="#">
+            <img src="travel_images/medium/5855735700.jpg"
+                 title="Arsenal"
+                 alt="5855735700">
+        </a>
+        <p class="image_title">Arsenal</p>
+        <p class="image_description">Arsenal Football Club is a professional football club based in Islington,
+                                     London, England, that plays in the Premier League, the top flight of English
+                                     football.</p>
+    </div>
+    <div class="hot_image">
+        <a href="#">
+            <img src="travel_images/medium/6114881215.jpg"
+                 title="Brandenburg Gate"
+                 alt="6114881215">
+        </a>
+        <p class="image_title">Brandenburg Gate</p>
+        <p class="image_description">The Brandenburg Gate is an 18th-century neoclassical monument in Berlin, built
+                                     on the orders of Prussian king Frederick William II after the temporary
+                                     restoration of order during the Batavian Revolution.</p>
+    </div>
+</div>
+<footer class="copyright">
+    <p class="contact_us">联系我们:19302010019@fudan.edu.cn</p>
+    <p class="copyright">Copyright &copy;2020 Letian Yuan. All rights reserved.</p>
+    <p class="record_number">(旦)-学习性-2020-0001&nbsp;&nbsp;&nbsp;旦公网安备19302010019号&nbsp;&nbsp;&nbsp;旦ICP证000019号</p>
+</footer>
+</body>
+</html>
