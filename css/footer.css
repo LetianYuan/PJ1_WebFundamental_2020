@@ -1,20 +1,11 @@
-@font-face
-{
-    font-family: foot;
-    src: url('../font/张海山锐线体简2.0.ttf');
-}
-
 footer.copyright
 {
+    clear: both;
+    float: bottom;
     color: #FFFFFF;
     font-size: 15px;
     padding: 15px 0;
     text-align: center;
     line-height: 25px;
     background: #00449F;
-}
-
-footer.copyright p
-{
-    font-family: foot, serif;
 }

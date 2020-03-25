@@ -15,11 +15,6 @@ nav li.home a:link, nav li.home a:visited, nav li.home a:active
     background-color: #00449F;
 }
 
-body
-{
-    background: #E0E0E0;
-}
-
 nav li.home a:hover
 {
     text-decoration: none;
@@ -81,7 +76,6 @@ div.hot_image_area
 .hot_image_area div.hot_image
 {
     display: inline-block;
-    list-style: none;
     width: 300px;
     height: 220px;
     padding: 15px 15px;
