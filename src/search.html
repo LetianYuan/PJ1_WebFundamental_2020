@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <title>搜索</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+<nav>
+    <ul class="toolbar">
+        <li class="home">
+            <a href="home.html">首页</a>
+        </li>
+        <li class="browse">
+            <a href="browse.html">浏览</a>
+        </li>
+        <li class="search">
+            <a href="#">搜索</a>
+        </li>
+        <li class="user">
+            <a href="#">个人中心 <span class="dropdown_caret"></span></a>
+            <ul class="menu">
+                <li>
+                    <a href="upload.html"><img src="../img/upload.png" alt="1.">上传</a>
+                </li>
+                <li>
+                    <a href="myPhoto.html"><img src="../img/photo.png" alt="2.">我的照片</a>
+                </li>
+                <li>
+                    <a href="favourite.html"><img src="../img/favorite.png" alt="3.">我的收藏</a>
+                </li>
+                <li>
+                    <a href="../index.html"><img src="../img/exit.png" alt="4.">登入</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<main>
+    <form action="search.html" method="post">
+        <fieldset>
+            <ul>
+                <li class="title">
+                    搜索
+                </li>
+                <li class="content">
+                    <input type="submit" value="搜索">
+                    <label><input type="radio" name="search" value="Title" checked>按标题搜索</label>
+                    <label><input type="radio" name="search" value="Content">按内容搜索</label>
+                    <br/>
+                    <input type="text" placeholder="输入搜索关键词">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+
+    <ul class="result">
+        <li class="title">
+            结果
+        </li>
+        <li class="content">
+
+            <ul class="pictures">
+                <li>
+
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5855221959.jpg"
+                             title="Lewes Castle"
+                             alt="5855221959">
+                    </a>
+                    <span class="image_description"><strong class="image_title">Lewes Castle</strong><br/>
+                        Lewes Castle stands at the highest point of Lewes, East Sussex, England on an artificial
+                        mound constructed with chalk blocks.</span>
+                </li>
+                <li>
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5856616479.jpg"
+                             title="Cliff"
+                             alt="5856616479">
+                    </a>
+                    <span class="image_description"><strong class="image_title">Cliff</strong><br/>
+                        A cliff is a mass of rock that rises very high and is almost
+                        vertical, or straight up-and-down. Cliffs are very common landscape
+                        features.</span>
+                </li>
+                <li>
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/6596046267.jpg"
+                             title="Rockefeller Center"
+                             alt="6596046267">
+                    </a>
+                    <span class="image_description"><strong class="image_title">Rockefeller Center</strong><br/>
+                        New York City's historic landmark for dining and shopping in the
+                        heart of Midtown Manhattan.</span>
+                </li>
+                <li>
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/9504445110.jpg"
+                             title="Santa Maria Novella"
+                             alt="9504445110">
+                    </a>
+                    <span class="image_description"> <strong class="image_title">Santa Maria Novella</strong><br/>
+                        Santa Maria Novella is a church in Florence, Italy, situated
+                        opposite, and lending its name to, the city's main railway
+                        station.</span>
+                </li>
+                <li>
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/8645912379.jpg"
+                             title="Christ Church"
+                             alt="8645912379">
+                    </a>
+                    <span class="image_description"> <strong class="image_title">Christ Church</strong><br/>
+                        Christ Church is a constituent college of the University of Oxford
+                        in England.</span>
+                </li>
+            </ul>
+            <div class="page_number">
+                <a href="#" title="第一页"><<</a>
+                <a href="#" title="1">1</a>
+                <a href="#" title="2">2</a>
+                <a href="#" title="3">3</a>
+                <a href="#" title="最后一页">>></a>
+            </div>
+        </li>
+    </ul>
+</main>
+
+
+<footer class="copyright">
+    <span class="copyright">Copyright &copy;2020 Letian Yuan. (旦)-学习性-2020-0001&nbsp;&nbsp;&nbsp;旦公网安备19302010019号&nbsp;&nbsp;&nbsp;旦ICP证000019号</span>
+</footer>
+
+</body>
+</html>

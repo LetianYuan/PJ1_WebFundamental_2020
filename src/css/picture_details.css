@@ -5,7 +5,7 @@
 @font-face
 {
     font-family: image_description;
-    src: url("../font/MYuppy.ttf");
+    src: url("../../font/MYuppy.ttf");
 }
 
 img.picture
@@ -99,6 +99,8 @@ table.picture_description td
 
 .interact
 {
+    float: right;
+    margin-right: 5vw;
     margin-top: 1.5vw;
 }
 
@@ -112,13 +114,13 @@ table.picture_description td
 .collect img
 {
     margin-left: 5vw;
-    background: url("../images/favorite.png") no-repeat;
+    background: url("../../img/favorite.png") no-repeat;
     background-size: 3vw;
 }
 
 .likes img
 {
-    background: url("../images/like.png") no-repeat;
+    background: url("../../img/like.png") no-repeat;
     background-size: 3vw;
 }
 
@@ -143,12 +145,12 @@ table.picture_description td
 
 .collect:hover img
 {
-    background: url("../images/favorite_hover.png") no-repeat;
+    background: url("../../img/favorite_hover.png") no-repeat;
     background-size: 3vw;
 }
 
 .likes:hover img
 {
-    background: url("../images/like_hover.png") no-repeat;
+    background: url("../../img/like_hover.png") no-repeat;
     background-size: 3vw;
 }

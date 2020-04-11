@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <title>上传</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/upload.css">
+</head>
+<body>
+<nav>
+    <ul class="toolbar">
+        <li class="home">
+            <a href="home.html">首页</a>
+        </li>
+        <li class="browse">
+            <a href="browse.html">浏览</a>
+        </li>
+        <li class="search">
+            <a href="search.html">搜索</a>
+        </li>
+        <li class="user">
+            <a href="#">个人中心 <span class="dropdown_caret"></span></a>
+            <ul class="menu">
+                <li>
+                    <a href="upload.html"><img src="../img/upload.png" alt="1.">上传</a>
+                </li>
+                <li>
+                    <a href="myPhoto.html"><img src="../img/photo.png" alt="2.">我的照片</a>
+                </li>
+                <li>
+                    <a href="favourite.html"><img src="../img/favorite.png" alt="3.">我的收藏</a>
+                </li>
+                <li>
+                    <a href="../index.html"><img src="../img/exit.png" alt="4.">登入</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<main>
+    <fieldset>
+        <ul>
+            <li class="title">
+                上传图片
+            </li>
+            <li class="content">
+                <form action="myPhoto.html" method="post">
+                    <div id="pic_area">
+                        <img id="pic_show" src="#" alt="">
+                        <br/>
+                        <span id="pic_status">图片未上传</span>
+                        <br/>
+                        <!--<button id="pic_upload">上传</button>-->
+                        <input type="file" name="file0" id="pic_fileBtn"
+                               accept="image/gif,image/jpeg,image/jpg,image/png,image/svg"/>
+                        <script src="js/upload_upload_picture.js"></script>
+                    </div>
+                    <label for="pic_title">图片标题：</label>
+                    <input type="text" id="pic_title" placeholder="请输入您为图片取的名字" required>
+                    <br/>
+                    <label for="pic_content">图片主题：</label>
+                    <input type="text" id="pic_content" placeholder="请输入图片的主题，例：建筑、人物等" required>
+                    <br/>
+                    <label for="pic_country">拍摄国家：</label>
+                    <input type="text" id="pic_country" placeholder="请输入您于何国家拍摄该图片" required>
+                    <br/>
+                    <label for="pic_city">拍摄城市：</label>
+                    <input type="text" id="pic_city" placeholder="请输入您于何城市拍摄该图片" required>
+                    <br/>
+                    <label for="pic_description">图片描述：</label>
+                    <textarea id="pic_description" placeholder="在此输入您的图片描述" required></textarea>
+                    <br/>
+                    <input type="submit" value="提交">
+                </form>
+
+            </li>
+        </ul>
+    </fieldset>
+</main>
+<footer class="copyright">
+    <span class="copyright">Copyright &copy;2020 Letian Yuan. (旦)-学习性-2020-0001&nbsp;&nbsp;&nbsp;旦公网安备19302010019号&nbsp;&nbsp;&nbsp;旦ICP证000019号</span>
+</footer>
+</body>
+</html>

@@ -1,11 +1,10 @@
 @import url(reset.css);
 @import url(nav.css);
 @import url(footer.css);
-
 @font-face
 {
     font-family: ink;
-    src: url('../font/Inkfree.ttf');
+    src: url('../../font/Inkfree.ttf');
 }
 
 nav li.home a:link, nav li.home a:visited, nav li.home a:active
@@ -122,6 +121,11 @@ div.hot_image_area
 .hot_image_area p.image_description:hover
 {
     color: #0884CF;
+}
+
+footer.copyright img
+{
+    padding-left: 20vw;
 }
 
 /*摘自https://www.cnblogs.com/vanwee/p/10298954.html*/

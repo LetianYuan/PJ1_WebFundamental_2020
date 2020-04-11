@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>注册</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<form action="../index.html" method="post">
+    <fieldset>
+        <legend>注册</legend>
+        <section>
+            <label for="user_name">用户名:</label>
+            <br/>
+            <input type="text" id="user_name" required>
+            <br/>
+            <label for="email">邮箱:</label>
+            <br/>
+            <input type="email" id="email" required>
+            <br/>
+            <label for="password">密码:</label>
+            <br/>
+            <input type="password" id="password" required>
+            <br/>
+            <label for="password_confirm">确认密码:</label>
+            <br/>
+            <input type="password" id="password_confirm" required>
+            <br/>
+            <input type="submit" id="register_button" value="注册">
+            <script defer>
+                register_button.onclick = function()
+                {
+                    alert("注册成功!");
+                }
+            </script>
+            <br/>
+            <p>已有账号? <a href="../index.html">去登陆吧!</a></p>
+        </section>
+    </fieldset>
+</form>
+
+<footer class="copyright">
+    <span class="copyright">Copyright &copy;2020 Letian Yuan. (旦)-学习性-2020-0001&nbsp;&nbsp;&nbsp;旦公网安备19302010019号&nbsp;&nbsp;&nbsp;旦ICP证000019号</span>
+</footer>
+
+</body>
+</html>

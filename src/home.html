@@ -4,6 +4,7 @@
 <head>
     <title>首页</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
 </head>
 
@@ -14,48 +15,48 @@
             <a href="#">首页</a>
         </li>
         <li class="browse">
-            <a href="#">浏览</a>
+            <a href="browse.html">浏览</a>
         </li>
         <li class="search">
-            <a href="#">搜索</a>
+            <a href="search.html">搜索</a>
         </li>
         <li class="user">
             <a href="#">个人中心 <span class="dropdown_caret"></span></a>
             <ul class="menu">
                 <li>
-                    <a href="#"><img src="images/upload.png" alt="1.">上传</a>
+                    <a href="upload.html"><img src="../img/upload.png" alt="1.">上传</a>
                 </li>
                 <li>
-                    <a href="#"><img src="images/photo.png" alt="2.">我的照片</a>
+                    <a href="myPhoto.html"><img src="../img/photo.png" alt="2.">我的照片</a>
                 </li>
                 <li>
-                    <a href="#"><img src="images/favorite.png" alt="3.">我的收藏</a>
+                    <a href="favourite.html"><img src="../img/favorite.png" alt="3.">我的收藏</a>
                 </li>
                 <li>
-                    <a href="#"><img src="images/exit.png" alt="4.">登入</a>
+                    <a href="../index.html"><img src="../img/exit.png" alt="4.">登入</a>
                 </li>
             </ul>
         </li>
     </ul>
 </nav>
 <div class="float_button">
-    <img src="images/refresh.png" title="刷新" id="refresh_button" class="refresh_button" alt="refresh">
+    <img src="../img/refresh.png" title="刷新" id="refresh_button" class="refresh_button" alt="refresh">
     <script>
-        refresh_button.onclick = function ()
+        refresh_button.onclick = function()
         {
             alert("页面已刷新!");
         }
     </script>
-    <img src="images/back_to_top.png" title="回到页面顶部" id="back_to_top" class="back_to_top" alt="back_to_top">
+    <img src="../img/back_to_top.png" title="回到页面顶部" id="back_to_top" class="back_to_top" alt="back_to_top">
     <script>
         var timer = null;
-        back_to_top.onclick = function ()
+        back_to_top.onclick = function()
         {
             cancelAnimationFrame(timer);
             timer = requestAnimationFrame(function fn()
             {
                 var oTop = document.body.scrollTop || document.documentElement.scrollTop;
-                if (oTop > 0)
+                if(oTop > 0)
                 {
                     document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
                     timer = requestAnimationFrame(fn);
@@ -69,14 +70,14 @@
     </script>
 </div>
 <div class="head_image">
-    <img class="head_image" src="images/home.jpg" alt="head_img">
+    <img class="head_image" src="../img/home.jpg" alt="head_img">
     <p class="head_title">Welcome!</p>
 </div>
 <script async src="js/home_picture_box_appear.js"></script>
 <div class="hot_image_area">
     <div class="hot_image">
         <a href="picture_details.html">
-            <img src="travel_images/medium/5855221959.jpg"
+            <img src="../img/travel_images/medium/5855221959.jpg"
                  title="Lewes Castle"
                  alt="5855221959">
         </a>
@@ -86,7 +87,7 @@
     </div>
     <div class="hot_image">
         <a href="picture_details.html">
-            <img src="travel_images/medium/5856616479.jpg"
+            <img src="../img/travel_images/medium/5856616479.jpg"
                  title="Cliff"
                  alt="5856616479">
         </a>
@@ -97,7 +98,7 @@
     </div>
     <div class="hot_image">
         <a href="picture_details.html">
-            <img src="travel_images/medium/6596046267.jpg"
+            <img src="../img/travel_images/medium/6596046267.jpg"
                  title="Rockefeller Center"
                  alt="6596046267">
         </a>
@@ -107,7 +108,7 @@
     </div>
     <div class="hot_image">
         <a href="picture_details.html">
-            <img src="travel_images/medium/9504445110.jpg"
+            <img src="../img/travel_images/medium/9504445110.jpg"
                  title="Santa Maria Novella"
                  alt="9504445110">
         </a>
@@ -117,7 +118,7 @@
     </div>
     <div class="hot_image">
         <a href="picture_details.html">
-            <img src="travel_images/medium/8645912379.jpg"
+            <img src="../img/travel_images/medium/8645912379.jpg"
                  title="Christ Church"
                  alt="8645912379">
         </a>
@@ -127,7 +128,7 @@
     </div>
     <div class="hot_image">
         <a href="picture_details.html">
-            <img src="travel_images/medium/6115548152.jpg"
+            <img src="../img/travel_images/medium/6115548152.jpg"
                  title="Checkpoint Charlie"
                  alt="6115548152">
         </a>
@@ -138,7 +139,7 @@
     </div>
     <div class="hot_image">
         <a href="picture_details.html">
-            <img src="travel_images/medium/5855735700.jpg"
+            <img src="../img/travel_images/medium/5855735700.jpg"
                  title="Arsenal"
                  alt="5855735700">
         </a>
@@ -149,7 +150,7 @@
     </div>
     <div class="hot_image">
         <a href="picture_details.html">
-            <img src="travel_images/medium/6114881215.jpg"
+            <img src="../img/travel_images/medium/6114881215.jpg"
                  title="Brandenburg Gate"
                  alt="6114881215">
         </a>
@@ -160,9 +161,10 @@
     </div>
 </div>
 <footer class="copyright">
-    <p class="contact_us">联系我们:19302010019@fudan.edu.cn</p>
-    <p class="copyright">Copyright &copy;2020 Letian Yuan. All rights reserved.</p>
-    <p class="record_number">(旦)-学习性-2020-0001&nbsp;&nbsp;&nbsp;旦公网安备19302010019号&nbsp;&nbsp;&nbsp;旦ICP证000019号</p>
+    <img src="../img/weixin.jpg" alt="微信" title="联系我们">
+    <span class="information">联系我们:19302010019@fudan.edu.cn<br/>
+                              Copyright &copy;2020 Letian Yuan. All rights reserved.<br/>
+                              (旦)-学习性-2020-0001&nbsp;&nbsp;&nbsp;旦公网安备19302010019号&nbsp;&nbsp;&nbsp;旦ICP证000019号</span>
 </footer>
 </body>
 </html>

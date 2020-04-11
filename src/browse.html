@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>浏览</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/browse.css">
+</head>
+<body>
+<nav>
+    <ul class="toolbar">
+        <li class="home">
+            <a href="home.html">首页</a>
+        </li>
+        <li class="browse">
+            <a href="#">浏览</a>
+        </li>
+        <li class="search">
+            <a href="search.html">搜索</a>
+        </li>
+        <li class="user">
+            <a href="#">个人中心 <span class="dropdown_caret"></span></a>
+            <ul class="menu">
+                <li>
+                    <a href="upload.html"><img src="../img/upload.png" alt="1.">上传</a>
+                </li>
+                <li>
+                    <a href="myPhoto.html"><img src="../img/photo.png" alt="2.">我的照片</a>
+                </li>
+                <li>
+                    <a href="favourite.html"><img src="../img/favorite.png" alt="3.">我的收藏</a>
+                </li>
+                <li>
+                    <a href="../index.html"><img src="../img/exit.png" alt="4.">登入</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<aside>
+    <ul class="search">
+        <li class="title">
+            按标题搜索
+        </li>
+        <li class="inputs">
+            <form action="#">
+                <input type="text" placeholder="搜索标题">
+                <a href="#"><img src="../img/empty.png" alt="搜索"></a>
+            </form>
+        </li>
+    </ul>
+    <ul class="hot_countries">
+        <li class="title">
+            热门国家快速浏览
+        </li>
+        <li class="aside_content">
+            中国
+        </li>
+        <li class="aside_content">
+            英国
+        </li>
+        <li class="aside_content">
+            美国
+        </li>
+        <li class="aside_content">
+            日本
+        </li>
+        <li class="aside_content">
+            意大利
+        </li>
+        <!--        <li class="more">-->
+        <!--            ...更多-->
+        <!--        </li>-->
+    </ul>
+    <ul class="hot_cities">
+        <li class="title">
+            热门城市快速浏览
+        </li>
+        <li class="aside_content">
+            上海
+        </li>
+        <li class="aside_content">
+            伦敦
+        </li>
+        <li class="aside_content">
+            纽约
+        </li>
+        <li class="aside_content">
+            东京
+        </li>
+        <li class="aside_content">
+            北京
+        </li>
+        <!--        <li class="more">-->
+        <!--            ...更多-->
+        <!--        </li>-->
+    </ul>
+    <ul class="hot_contents">
+        <li class="title">
+            热门内容快速浏览
+        </li>
+        <li class="aside_content">
+            唯美
+        </li>
+        <li class="aside_content">
+            城市
+        </li>
+        <li class="aside_content">
+            人物
+        </li>
+        <li class="aside_content">
+            动物
+        </li>
+        <li class="aside_content">
+            建筑
+        </li>
+        <!--        <li class="more">-->
+        <!--            ...更多-->
+        <!--        </li>-->
+    </ul>
+</aside>
+<script defer>
+    var liContent = document.getElementsByClassName("aside_content");
+    for(var i = 0; i < liContent.length; i++)
+    {
+        liContent[i].onclick = function()
+        {
+            alert(this.innerHTML);
+        };
+    }
+</script>
+<main>
+    <ul>
+        <li class="title">
+            筛选条件
+        </li>
+        <li class="filter">
+            <select id="content">
+                <option value="none" selected>--选择内容--</option>
+                <option value="唯美">唯美</option>
+                <option value="城市">城市</option>
+                <option value="人物">人物</option>
+                <option value="动物">动物</option>
+                <option value="建筑">建筑</option>
+                <option value="自然">自然</option>
+                <option value="古典">古典</option>
+                <option value="现代">现代</option>
+            </select>
+            <select id="country">
+                <option value="none" selected>--选择国家--</option>
+                <option value="中国">中国</option>
+                <option value="日本">日本</option>
+                <option value="意大利">意大利</option>
+                <option value="美国">美国</option>
+                <option value="英国">英国</option>
+                <option value="法国">法国</option>
+                <option value="埃及">埃及</option>
+                <option value="俄罗斯">俄罗斯</option>
+                <option value="巴西">巴西</option>
+            </select>
+            <select id="city">
+                <option value="none" selected>--选择地区--</option>
+            </select>
+            <input type="submit" value="筛选">
+        </li>
+        <script type="text/javascript" src="js/cities.json"></script>
+        <script src="js/browse_filter_onchange.js"></script>
+        <li class="content">
+            <!--待添加热门标签-->
+            <ul>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/222222.jpg" alt="222222.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/222223.jpg" alt="222223.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5855174537.jpg" alt="5855174537.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5855191275.jpg" alt="5855191275.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5855209453.jpg" alt="5855209453.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5855213165.jpg" alt="5855213165.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5855221959.jpg" alt="5855221959.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5855729828.jpg" alt="5855729828.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5855735700.jpg" alt="5855735700.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5855752464.jpg" alt="5855752464.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5855774224.jpg" alt="5855774224.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5856616479.jpg" alt="5856616479.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5856654945.jpg" alt="5856654945.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5856658791.jpg" alt="5856658791.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5856697109.jpg" alt="5856697109.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5857298322.jpg" alt="5857298322.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/5857398054.jpg" alt="5857398054.jpg">
+                    </a>
+                </li>
+                <li class="content_image">
+                    <a href="picture_details.html">
+                        <img src="../img/travel_images/medium/6114850721.jpg" alt="6114850721.jpg">
+                    </a>
+                </li>
+            </ul>
+            <script src="js/browse_picture_appear.js"></script>
+            <div class="page_number">
+                <a href="browse.html" title="第一页"><<</a>
+                <a href="browse.html" title="1">1</a>
+                <a href="browse2.html" title="2">2</a>
+                <a href="browse3.html" title="3">3</a>
+                <a href="browse3.html" title="最后一页">>></a>
+            </div>
+        </li>
+    </ul>
+</main>
+<footer class="copyright">
+    <span class="copyright">Copyright &copy;2020 Letian Yuan. (旦)-学习性-2020-0001&nbsp;&nbsp;&nbsp;旦公网安备19302010019号&nbsp;&nbsp;&nbsp;旦ICP证000019号</span>
+</footer>
+</body>
+</html>

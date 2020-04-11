@@ -3,6 +3,7 @@
 <head>
     <title>图片详情</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/picture_details.css">
 </head>
 <body>
@@ -12,32 +13,32 @@
             <a href="home.html">首页</a>
         </li>
         <li class="browse">
-            <a href="#">浏览</a>
+            <a href="browse.html">浏览</a>
         </li>
         <li class="search">
-            <a href="#">搜索</a>
+            <a href="search.html">搜索</a>
         </li>
         <li class="user">
             <a href="#">个人中心 <span class="dropdown_caret"></span></a>
             <ul class="menu">
                 <li>
-                    <a href="#"><img src="images/upload.png" alt="1.">上传</a>
+                    <a href="upload.html"><img src="../img/upload.png" alt="1.">上传</a>
                 </li>
                 <li>
-                    <a href="#"><img src="images/photo.png" alt="2.">我的照片</a>
+                    <a href="myPhoto.html"><img src="../img/photo.png" alt="2.">我的照片</a>
                 </li>
                 <li>
-                    <a href="#"><img src="images/favorite.png" alt="3.">我的收藏</a>
+                    <a href="favourite.html"><img src="../img/favorite.png" alt="3.">我的收藏</a>
                 </li>
                 <li>
-                    <a href="#"><img src="images/exit.png" alt="4.">登入</a>
+                    <a href="../index.html"><img src="../img/exit.png" alt="4.">登入</a>
                 </li>
             </ul>
         </li>
     </ul>
 </nav>
 <div class="vague_border">
-    <img src="travel_images/medium/5855221959.jpg"
+    <img src="../img/travel_images/medium/6592914823.jpg"
          title="Lewes Castle"
          alt="5855221959"
          class="picture">
@@ -53,7 +54,7 @@
         <td>张三</td>
     </tr>
     <tr>
-        <th>分类</th>
+        <th>主题</th>
         <td>建筑</td>
     </tr>
     <tr>
@@ -72,14 +73,18 @@
     </tr>
 </table>
 <div class="interact">
-    <a href="#" class="likes"><img src="images/empty.png" alt="赞" title="赞"><span>赞 1.3万</span></a>
-    <a href="#" class="collect"><img src="images/empty.png" alt="收藏" title="收藏"><span>我要收藏</span></a>
+    <a href="#" class="likes"><img src="../img/empty.png" alt="赞" title="赞"><span>赞 1.3万</span></a>
+    <a href="#" class="collect" id="collect"><img src="../img/empty.png" alt="收藏" title="收藏"><span>收藏 2333</span></a>
+    <script defer>
+        collect.onclick = function()
+        {
+            alert("已收藏");
+        }
+    </script>
 </div>
 
 <footer class="copyright">
-    <p class="contact_us">联系我们:19302010019@fudan.edu.cn</p>
-    <p class="copyright">Copyright &copy;2020 Letian Yuan. All rights reserved.</p>
-    <p class="record_number">(旦)-学习性-2020-0001&nbsp;&nbsp;&nbsp;旦公网安备19302010019号&nbsp;&nbsp;&nbsp;旦ICP证000019号</p>
+    <span class="copyright">Copyright &copy;2020 Letian Yuan. (旦)-学习性-2020-0001&nbsp;&nbsp;&nbsp;旦公网安备19302010019号&nbsp;&nbsp;&nbsp;旦ICP证000019号</span>
 </footer>
 </body>
 </html>
