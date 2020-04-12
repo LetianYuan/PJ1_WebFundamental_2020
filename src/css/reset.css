@@ -6,6 +6,7 @@ body, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, dt, dd, p, span, div, object, ifra
     font-family: "Microsoft YaHei UI", serif;
     font-size: 100%;
     vertical-align: baseline;
+    outline: 0;
 }
 
 body
