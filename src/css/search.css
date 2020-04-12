@@ -2,12 +2,6 @@
 @import url(nav.css);
 @import url(footer.css);
 
-@font-face
-{
-    font-family: yuppy;
-    src: url("../../font/MYuppy.ttf");
-}
-
 body
 {
     min-width: 700px;

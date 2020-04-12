@@ -1,11 +1,6 @@
 @import url(reset.css);
 @import url(nav.css);
 @import url(footer.css);
-@font-face
-{
-    font-family: ink;
-    src: url('../../font/Inkfree.ttf');
-}
 
 nav li.home a:link, nav li.home a:visited, nav li.home a:active
 {

@@ -2,12 +2,6 @@
 @import url(nav.css);
 @import url(footer.css);
 
-@font-face
-{
-    font-family: image_description;
-    src: url("../../font/MYuppy.ttf");
-}
-
 img.picture
 {
     width: 100%;
@@ -48,7 +42,7 @@ table.picture_description
 
 table.picture_description caption
 {
-    font-family: image_description, serif;
+    font-family: yuppy, serif;
     color: #FFFFFF;
     font-size: 3.5vw;
     font-weight: bold;
@@ -65,7 +59,7 @@ table.picture_description caption
 
 table.picture_description tr
 {
-    font-family: image_description, serif;
+    font-family: yuppy, serif;
     text-align: left;
     color: #0884CF;
 }
@@ -133,7 +127,7 @@ table.picture_description td
 {
     position: relative;
     top: -0.8vw;
-    font-family: image_description, serif;
+    font-family: yuppy, serif;
     color: #000000;
     font-size: 1.6vw;
 }

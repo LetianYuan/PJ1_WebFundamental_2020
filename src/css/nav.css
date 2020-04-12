@@ -1,15 +1,3 @@
-@font-face
-{
-    font-family: navleft;
-    src: url('../../font/华康少女全特符.ttf');
-}
-
-@font-face
-{
-    font-family: navright;
-    src: url('../../font/简繁娃娃体.ttf');
-}
-
 body
 {
     margin-top: 46px;

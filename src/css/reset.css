@@ -13,3 +13,27 @@ body
 {
     background: #E8E8E8;
 }
+
+@font-face
+{
+    font-family: yuppy;
+    src: url("../../font/MYuppy.ttf");
+}
+
+@font-face
+{
+    font-family: ink;
+    src: url('../../font/Inkfree.ttf');
+}
+
+@font-face
+{
+    font-family: navleft;
+    src: url('../../font/华康少女全特符.ttf');
+}
+
+@font-face
+{
+    font-family: navright;
+    src: url('../../font/简繁娃娃体.ttf');
+}
