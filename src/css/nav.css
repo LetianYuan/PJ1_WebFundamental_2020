@@ -93,8 +93,8 @@ nav a:hover
 nav ul.menu
 {
     list-style: none;
-    display: none;
-    z-index: 9999;
+    display: none;/*下拉栏隐藏*/
+    z-index: 9999;/*始终置顶*/
     position: fixed;
     top: 46px;
     width: 128px;
@@ -145,5 +145,5 @@ nav ul.menu a:hover
 
 nav li.user:hover ul.menu
 {
-    display: block;
+    display: block;/*下拉栏出现*/
 }
