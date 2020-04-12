@@ -32,7 +32,7 @@ ul.container img
 
 ul.container li.title
 {
-    font-family: yuppy, serif;
+    /*font-family: yuppy, serif;*/
     color: #FFFFFF;
     width: 100%;
     position: relative;
@@ -78,7 +78,7 @@ ul.container ul.pictures span.image_right_area
 
 ul.container ul.pictures span.image_description
 {
-    font-family: yuppy, serif;
+    /*font-family: yuppy, serif;*/
     font-size: 14pt;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -158,7 +158,7 @@ div.page_number a
     padding: 0 10px;
     text-decoration: none;
     display: inline-block;
-    font-family: yuppy, serif;
+    /*font-family: yuppy, serif;*/
     font-size: 14pt;
     color: #0884FF;
 }

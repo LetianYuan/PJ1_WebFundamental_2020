@@ -19,7 +19,7 @@ fieldset ul
 
 fieldset li.title
 {
-    font-family: yuppy, serif;
+    /*font-family: yuppy, serif;*/
     color: #FFFFFF;
     width: 100%;
     position: relative;

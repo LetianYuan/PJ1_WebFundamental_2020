@@ -37,7 +37,7 @@ nav li a
     height: 46px;
     text-align: center;
     font-size: 18pt;
-    font-family: navleft, serif;
+    /*font-family: navleft, serif;*/
     color: #FFFFFF;
 }
 
@@ -57,7 +57,7 @@ nav li.user a
     width: 144px;
     text-align: center;
     font-size: 18pt;
-    font-family: navright, serif;
+    /*font-family: navright, serif;*/
     color: #FFFFFF;
 }
 
@@ -120,7 +120,7 @@ nav ul.menu a
     height: 40px;
     width: 120px;
     line-height: 40px;
-    font-family: navright, serif;
+    /*font-family: navright, serif;*/
     font-size: 15pt;
 }
 

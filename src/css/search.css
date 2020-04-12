@@ -38,7 +38,7 @@ fieldset ul
 
 fieldset li.title
 {
-    font-family: yuppy, serif;
+    /*font-family: yuppy, serif;*/
     color: #FFFFFF;
     width: 100%;
     position: relative;
@@ -124,7 +124,7 @@ ul.result img
 
 ul.result li.title
 {
-    font-family: yuppy, serif;
+    /*font-family: yuppy, serif;*/
     color: #FFFFFF;
     width: 100%;
     position: relative;
@@ -166,7 +166,7 @@ ul.result ul.pictures span
     position: relative;
     top: 30px;
     width: calc(100% - 270px);
-    font-family: yuppy, serif;
+    /*font-family: yuppy, serif;*/
     font-size: 14pt;
     float: right;
     display: -webkit-box;
@@ -210,7 +210,7 @@ div.page_number a
     padding: 0 10px;
     text-decoration: none;
     display: inline-block;
-    font-family: yuppy, serif;
+    /*font-family: yuppy, serif;*/
     font-size: 14pt;
     color: #0884FF;
 }
